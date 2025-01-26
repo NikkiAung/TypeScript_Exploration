@@ -1,13 +1,18 @@
 //num declare
 let num: number = 10
 
-
+//Developer1
 interface User {
     name : string
     password : number
     phone? : number //? means it is optional
     isLogin() : string
     getAge : () => number
+}
+
+//Developer2
+interface User {
+    isDriving(status : boolean) : string
 }
 
 const user : User = {
@@ -19,6 +24,9 @@ const user : User = {
     },
     getAge: () => {
         return 10
+    },
+    isDriving: (status) => {
+        return 'Driving'
     }
 }
 
